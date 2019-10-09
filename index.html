@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<title>Crystal Collector</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h1>Crystal Collector Game</h1></div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-12 instructions box">
+                <h3>Instructions</h3>
+                <p>You will be given a random number at the start of the game. This is your target score.</p>
+                <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your score. You <strong>win</strong> the game by matching your total score to the target score. You <strong>lose</strong> the game if your score exceeds the target score.</p>
+                <p>The value of each crystal is hidden from you until you click on it, and then you can determine the value by seeing how many points were added to your total score.</p>
+                <p>Each time the game starts, your target score and the values of the crystals will change! <span>Click any crystal to start the game.</span></p>
+            </div>
+        </div>
+        <br>
+
+        <div class="modal alert row text-center">
+            <h3 id="winloss"></h3>
+            <a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#basicModal">Play Again</a>
+        </div>
+        <br>
+
+        <div class="row box">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Target Score: </h4>
+                        <div id="scoreTarget"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Your Score: </h4>
+                        <div id="scoreBox">0</div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Wins: </h4>
+                        <div id="wins"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Losses: </h4> 
+                        <div id="losses">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='button1'>
+                    <img src="assets/images/blue diamond.png.png" alt="pink jewel">
+                </button>
+            </div>
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='button2'>
+                    <img src="assets/images/lemondiamond.png.jpg" alt="green jewel">
+                </button>
+            </div>
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='button3'>
+                    <img src="assets/images/red triangle.png.jpg" alt="blue jewel">
+                </button>
+            </div>
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='button4'>
+                    <img src="assets/images/wineoctagon.png.jpg" alt="yellow jewel">
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    
+</body>
+</html>
